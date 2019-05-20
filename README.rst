@@ -36,6 +36,7 @@ using Salt.
 
 
 To use with Docker just run 
+
 .. code-block:: bash
 
     docker-compose up -d
