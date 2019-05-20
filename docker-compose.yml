@@ -1,0 +1,23 @@
+version: '3.6'
+
+services: 
+  salt-master:
+    container_name: salt-master
+    networks: 
+      - 'common'
+    build:
+      context: ./saltstack/docker
+      dockerfile: Dockerfile.master
+    restart: always
+  
+  salt-minion:
+    networks: 
+      - 'common'
+    build:
+      context: ./saltstack/docker
+      dockerfile: Dockerfile.minion
+    depends_on:
+      - salt-master
+
+networks: 
+  common: {}

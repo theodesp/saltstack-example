@@ -1,8 +1,8 @@
 =================
-Salt Vagrant Demo
+Salt Example
 =================
 
-A Salt Demo using Vagrant.
+A Salt example using Vagrant and Docker.
 
 
 Instructions
@@ -33,3 +33,11 @@ using Salt.
 
     vagrant ssh master
     sudo salt \* test.ping
+
+
+To use with Docker just run 
+.. code-block:: bash
+
+    docker-compose up -d
+    docker-compose scale salt-minion=2
+    docker exec salt-master salt "*" test.ping
