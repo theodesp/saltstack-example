@@ -29,4 +29,8 @@ resource "scaleway_server" "master_host" {
     content     = "${file("scripts/master.conf")}"
     destination = "/etc/salt/master.d/master.conf"
   }
+
+  provisioner "remote-exec" {
+    script = "salt-key -A -y"
+  }
 }
