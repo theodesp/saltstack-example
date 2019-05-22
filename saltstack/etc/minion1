@@ -451,7 +451,7 @@ id: minion1
 # Fingerprint of the master public key to double verify the master is valid,
 # the master fingerprint can be found by running "salt-key -F master" on the
 # salt master.
-#master_finger: ''
+master_finger: '2b:f2:4a:6f:62:4e:d5:dc:d3:ad:4a:ce:cf:e3:77:41:88:b7:67:ee:72:69:81:e3:b2:5f:81:b6:9f:e1:d1:74'
 
 
 ######         Thread settings        #####

@@ -20,6 +20,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y salt-master
 
 VOLUME ['/etc/salt/pki', '/var/cache/salt', '/var/logs/salt', '/etc/salt/master.d', '/srv/salt']
 
+COPY config/master /etc/salt/
+
 # Add Run File
 
 ADD run-master.sh /usr/local/bin/run.sh

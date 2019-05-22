@@ -25,12 +25,12 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y salt-minion
 
 VOLUME ['/etc/salt/minion.d']
 
+COPY config/minion /etc/salt/
+
 # Add Run File
 
 ADD run-minion.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
-
-RUN sed -i "s|#master: salt|master: salt-master|g" /etc/salt/minion
 
 # Run Command
 

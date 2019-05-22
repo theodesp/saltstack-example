@@ -42,3 +42,5 @@ To use with Docker just run
     docker-compose up -d
     docker-compose scale salt-minion=2
     docker exec salt-master salt "*" test.ping
+
+To use with Terraform navigate to the `terraform` folder and follow the instruction on the readme. 
