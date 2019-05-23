@@ -13,9 +13,8 @@ already be installed.
 
 .. code-block:: bash
 
-    git clone https://github.com/theodesp/salt-vagrant-demo.git
-    cd salt-vagrant-demo
-    vagrant plugin install vagrant-vbguest
+    git clone https://github.com/theodesp/saltstack-example.git
+    cd saltstack-example
     vagrant up
 
 
