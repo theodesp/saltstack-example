@@ -1,8 +1,8 @@
 =================
-Salt Example
+Saltstack Examples
 =================
 
-A Salt example using Vagrant and Docker.
+Saltstack examples using Vagrant and Docker.
 
 
 Instructions
@@ -13,7 +13,7 @@ already be installed.
 
 .. code-block:: bash
 
-    git clone https://github.com/UtahDave/salt-vagrant-demo.git
+    git clone https://github.com/theodesp/salt-vagrant-demo.git
     cd salt-vagrant-demo
     vagrant plugin install vagrant-vbguest
     vagrant up
@@ -35,7 +35,7 @@ using Salt.
     sudo salt \* test.ping
 
 
-To use with Docker just run 
+To use with Docker just run
 
 .. code-block:: bash
 
@@ -43,4 +43,6 @@ To use with Docker just run
     docker-compose scale salt-minion=2
     docker exec salt-master salt "*" test.ping
 
-To use with Terraform navigate to the `terraform` folder and follow the instruction on the readme. 
+To use with Terraform navigate to the `terraform` folder and follow the instruction on the readme.
+
+To use with Packer navigate to the `packer` folder and follow the instruction on the readme.

@@ -1,0 +1,8 @@
+{
+  "token": "",
+  "image": "ubuntu-18-04-x64",
+  "region": "lon1",
+  "size": "1gb",
+  "droplet_name": "salt-master",
+  "provision_script_param": "master"
+}
